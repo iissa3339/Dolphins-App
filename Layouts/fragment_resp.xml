@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.respFrag">
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#AEC298">">
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="341dp"
+            android:layout_height="56dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Dolphins' Respiratory System"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="220dp"
+            android:layout_height="193dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            app:srcCompat="@drawable/lungs" />
+
+        <TextView
+            android:id="@+id/textLungs"
+            android:layout_width="170dp"
+            android:layout_height="180dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="5dp"
+            android:text="@string/respSystem"
+            android:textSize="16sp"
+            android:gravity="fill"
+            android:textColor="#000000"/>
+        <View
+            android:id="@+id/topdivider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#9C27B0"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="10dp"/>
+        <View
+            android:id="@+id/bottomdivider"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="#9C27B0"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="250dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bottomdivider"
+            android:id="@+id/questionaboutBreathing"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="Dolphins use their ________ to breathe"
+            android:textSize="20dp"
+            android:textColor="#0B00C0"/>
+        <RadioGroup
+            android:id="@+id/questionBreathing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/gillsCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="330dp"
+                android:layout_marginLeft="50dp"
+                android:text="Gills like fish"
+                android:textColor="#0000FF"
+                android:textSize="19sp"/>
+
+            <RadioButton
+                android:id="@+id/blowholeCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="-32dp"
+                android:layout_marginLeft="230dp"
+                android:text="Blowhole"
+                android:textColor="#0000FF"
+                android:textSize="19dp" />
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="390dp"
+            android:layout_marginLeft="10dp"
+            android:text="Dolphins are ________"
+            android:textSize="20dp"
+            android:textColor="#0B00C0"/>
+        <RadioGroup
+            android:id="@+id/questionType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/mammalCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="435dp"
+                android:layout_marginLeft="50dp"
+                android:text="Mammals"
+                android:textColor="#0000FF"
+                android:textSize="19dp"/>
+            <RadioButton
+                android:id="@+id/fishCheck"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="-32dp"
+                android:layout_marginLeft="230dp"
+                android:text="Fish"
+                android:textColor="#0000FF"
+                android:textSize="19dp"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/checkAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questionType"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="15dp"
+            android:background="#C8ABCF"
+            android:text="Check answers"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+        <Button
+            android:id="@+id/clearAns"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/questionType"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#C8ABCF"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textSize="20sp" />
+
+    </RelativeLayout>
+
+</FrameLayout>
