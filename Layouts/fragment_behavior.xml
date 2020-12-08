@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.main.behaviorFrag">
+
+
+    <RelativeLayout
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4E4F55"
+        android:scrollbars="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">>
+
+            <TextView
+                android:id="@+id/behaviortitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="So, how is dolphins' sleep in water affected by the necessity of air?"
+                android:textColor="#FFFFFF"
+                android:textSize="22sp"
+                android:textStyle="bold"/>
+            <View
+                android:id="@+id/behaviordivider"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="#FFFFFF"
+                android:layout_below="@+id/behaviortitle"
+                android:layout_marginTop="5dp"/>
+
+            <ImageView
+                android:id="@+id/sleeping3"
+                android:layout_width="300dp"
+                android:layout_height="190dp"
+                android:layout_below="@+id/behaviordivider"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/sleeping3" />
+
+            <ImageView
+                android:id="@+id/sleeping"
+                android:layout_width="174dp"
+                android:layout_height="114dp"
+                android:layout_below="@+id/sleeping3"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/sleeping" />
+
+            <ImageView
+                android:id="@+id/sleeping2"
+                android:layout_width="174dp"
+                android:layout_height="114dp"
+                android:layout_below="@+id/sleeping"
+                android:layout_marginTop="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                app:srcCompat="@drawable/sleeping2" />
+
+            <TextView
+                android:id="@+id/behavtext"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/sleeping3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/behaviorText"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp" />
+            <TextView
+                android:id="@+id/behavtext2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/behavtext"
+                android:layout_marginLeft="10dp"
+                android:textColor="#FFFFFF"
+                android:textSize="17sp"
+                android:text="@string/behaviorText2"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/behavtext2"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="-20dp"
+                android:text="Follow"
+                android:id="@+id/follow"/>
+
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+</FrameLayout>
